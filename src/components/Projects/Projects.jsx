@@ -8,7 +8,7 @@ const Projects = () => {
       title: 'Food Del – Food Ordering Website',
       description: 'A comprehensive food ordering platform featuring an admin panel, order management system, and secure payment integration.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: '#',
+      github: 'https://github.com/KrishGupta577/Food-Del',
       live: '#',
       image: 'food-del.jpg'
     },
