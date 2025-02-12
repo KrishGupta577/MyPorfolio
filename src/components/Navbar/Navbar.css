@@ -70,3 +70,9 @@
       transform: translateX(0);
     }
   }
+
+@media(max-width: 900px){
+  .nav-links{
+    display: none;
+  }
+}
