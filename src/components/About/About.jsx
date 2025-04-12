@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-content">
         <div className="about-image">
           <div className="image-container">
-            <img src='/myProfilePhoto.jpeg' className="image-placeholder"></img>
+            <img src='https://res.cloudinary.com/dgsgck3ur/image/upload/v1744446881/WhatsApp_Image_2025-04-12_at_14.02.27_dfeg7u.jpg' className="image-placeholder"></img>
           </div>
         </div>
         <div className="about-text">
