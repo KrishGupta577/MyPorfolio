@@ -14,13 +14,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-
       // Reset status after 3 seconds
       setTimeout(() => setSubmitStatus(null), 3000);
     }, 1500);
