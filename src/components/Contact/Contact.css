@@ -1,0 +1,155 @@
+.contact {
+    padding: 6rem 2rem;
+    background: var(--bg-dark);
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  .contact-info {
+    padding: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .contact-info p {
+    color: #d1d5db;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-light);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-method:hover {
+    transform: translateX(10px);
+  }
+  
+  .contact-icon {
+    color: var(--primary);
+  }
+  
+  .contact-method h4 {
+    margin-bottom: 0.25rem;
+  }
+  
+  .contact-method span {
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  
+  .contact-form {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-dark);
+    border: 1px solid #374151;
+    border-radius: 5px;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.4s;
+  }
+  
+  .form-group input:focus ~ .focus-border,
+  .form-group textarea:focus ~ .focus-border {
+    width: 100%;
+    left: 0;
+  }
+  
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .submit-btn:hover {
+    background: var(--primary-dark);
+  }
+  
+  .submit-btn.submitting {
+    background: var(--primary-dark);
+    pointer-events: none;
+  }
+  
+  .loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
